@@ -1,0 +1,19 @@
+Reverse a string
+
+Check if a string is a palindrome
+
+Count the number of vowels in a string
+
+Find the first non-repeating character in a string
+
+Convert a string to title case
+
+Check if two strings are anagrams
+
+Remove duplicate characters from a string
+
+Find the most frequent character in a string
+
+Replace all spaces in a string with underscores
+
+Find the longest word in a sentence
