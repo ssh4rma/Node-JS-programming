@@ -16,3 +16,5 @@ console.log("1" + 2);
 
 //type cohersion
 console.log('1' == true);
+let x = 'a', b = true;
+console.log(x == b); //fasle
