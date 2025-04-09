@@ -21,3 +21,11 @@ function helper() {
 
 helper();
 console.log(x); //reference error
+
+//functional scope
+function helper2() {
+  var zz = 10100;
+  console.log(zz);
+}
+helper2();
+console.log(zz); //reference error
