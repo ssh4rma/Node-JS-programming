@@ -7,7 +7,11 @@
 </head>
 <body>
   <button onclick="fun()">Click Me!</button>
+  <button ondblclick="fun2()">Double Click Me!</button>
   <script>
+    function fun2() {
+      alert("Double click event handler");
+    }
     function fun() {
       alert("Click event handler");
     }
