@@ -6,4 +6,9 @@ let str = "10";
 let num = 5;
 console.log(str - num); // 5 
 console.log("20" * 2); // 40 
-console.log("15" / "3"); // 5 
+console.log("15" / "3"); // 5
+
+
+if ("hello") { console.log("truthy"); } 
+if (0) { console.log("falsy"); } 
+console.log(!!"123"); 
