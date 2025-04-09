@@ -12,3 +12,12 @@
 console.log(x); //error
 console.log(y); //error
 console.log(z); //100
+
+//local scope
+function helper() {
+  let x = 10;
+  console.log(x);
+}
+
+helper();
+console.log(x); //reference error
