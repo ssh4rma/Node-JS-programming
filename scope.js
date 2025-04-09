@@ -1,6 +1,8 @@
 //blocked scoped: this is introduced in ES6 
 //let and const are blocked scoped
 
+let xxx = 19999;
+
 {
   let x = 5;
   const y = 10;
@@ -29,3 +31,6 @@ function helper2() {
 }
 helper2();
 console.log(zz); //reference error
+
+//Global scope
+console.log(xxx);
