@@ -31,3 +31,16 @@ const ob = {
 const ob1 = Object.create(ob); 
 console.log(ob1.getInfo());
 console.log(ob1.prototype);
+
+function User(name){
+  this.name = name;
+
+  console.log(this);
+}
+
+User.prototype.printName = function(){
+  console.log(this.name)
+}
+
+
+let kedar = new User("kedar")
