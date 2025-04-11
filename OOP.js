@@ -52,3 +52,22 @@ Array.prototype.unique = function(){
 }
 
 console.log(arr.unique());
+
+class UserInfo {
+  constructor(name){
+    this._name = name
+  }
+
+  get getName(){
+    console.log(this._name)
+  }
+
+  set setName(newName){
+    this._name = newName
+  }
+}
+
+const u1 = new UserInfo("Shubham");
+console.log(u1.getName);
+u1.setName = "Rajesh";
+console.log(u1.getName);
