@@ -101,3 +101,6 @@ class Bank {
     return this.#balance; 
   }
 }
+
+const account = new Bank("Shubham");
+console.log(account.#balance); //error
