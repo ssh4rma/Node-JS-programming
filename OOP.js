@@ -71,3 +71,19 @@ const u1 = new UserInfo("Shubham");
 console.log(u1.getName);
 u1.setName = "Rajesh";
 console.log(u1.getName);
+
+
+//class declaration
+class Car {
+  constructor(brand, model) {
+    this.brand = brand; 
+    this.model = model;
+  }
+
+  drive() {
+    return `${this.brand} ${this.model} is driving!`;
+  }
+}
+
+const myCar = new Car("Toyota", "Corolla");
+console.log(myCar.drive());
