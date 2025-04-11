@@ -129,3 +129,19 @@ class Dog extends Animal {
 const myDog = new Dog("Jambo", "Doberman");
 console.log(myDog.speak()); 
 console.log(myDog.breed);
+
+//abstraction
+class CoffeeMachine {
+  #boilWater() {
+    return "Water boiled";
+  }
+
+  makeCoffee() {
+    this.#boilWater();
+    return "Coffee is ready!";
+  }
+}
+
+const mc = new CoffeeMachine();
+console.log(mc.makeCoffee());
+console.log(mc.#boilWater);
