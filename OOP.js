@@ -120,4 +120,12 @@ class Dog extends Animal {
     super(name); 
     this.breed = breed;
   }
+
+  speak() {
+    return `${this.name} barks`;
+  }
 }
+
+const myDog = new Dog("Jambo", "Doberman");
+console.log(myDog.speak()); 
+console.log(myDog.breed);
