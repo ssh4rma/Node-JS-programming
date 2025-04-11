@@ -87,3 +87,17 @@ class Car {
 
 const myCar = new Car("Toyota", "Corolla");
 console.log(myCar.drive());
+
+
+//private variable in class
+class Bank {
+  #balance = 0;
+
+  constructor(owner) {
+    this.owner = owner;
+  }
+
+  getBalance() {
+    return this.#balance; 
+  }
+}
