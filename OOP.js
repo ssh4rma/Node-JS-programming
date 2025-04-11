@@ -104,3 +104,20 @@ class Bank {
 
 const account = new Bank("Shubham");
 console.log(account.#balance); //error
+
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  speak() {
+    return `${this.name} makes a sound.`;
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, breed) {
+    super(name); 
+    this.breed = breed;
+  }
+}
