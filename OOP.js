@@ -16,3 +16,18 @@ Student.sharedData = "Changed";
 
 console.log(student1.schoolName()); // "Changed"
 console.log(student2.schoolName()); // "Changed"
+
+
+const ob = {
+  name : "shubham", 
+  age : "23",
+  location : "Chennai",
+
+  getInfo : function (){
+    return `${this.name}, ${this.age}, ${this.location}`;
+  }
+}
+
+const ob1 = Object.create(ob); 
+console.log(ob1.getInfo());
+console.log(ob1.prototype);
