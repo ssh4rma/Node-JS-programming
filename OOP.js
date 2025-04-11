@@ -145,3 +145,19 @@ class CoffeeMachine {
 const mc = new CoffeeMachine();
 console.log(mc.makeCoffee());
 console.log(mc.#boilWater);
+
+//method overriding
+class Vehicle {
+  start() {
+    return "Vehicle started";
+  }
+}
+
+class Motorcycle extends Vehicle {
+  start() {
+    return "Motorcycle roars to life!";
+  }
+}
+
+const bike = new Motorcycle();
+console.log(bike.start()); 
