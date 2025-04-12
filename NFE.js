@@ -25,5 +25,8 @@ console.log(user.sayBye.length)
 
 //NFE
 let sayHi = function(who) {
-  alert(`Hello, ${who}`);
+  console.log(`Hello, ${who}`);
 };  
+
+
+sayHi("Shubham");
