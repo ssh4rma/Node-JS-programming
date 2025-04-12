@@ -30,3 +30,17 @@ let sayHi = function(who) {
 
 
 sayHi("Shubham");
+
+//NFE usecase
+let sayHello = function func(who) {
+  if (who) {
+    console.log(`Hello, ${who}`);
+  } else {
+    func("Guest"); 
+  }
+};
+
+sayHi(); // Hello, Guest
+
+
+func(); // Error
