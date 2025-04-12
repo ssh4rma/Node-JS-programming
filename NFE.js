@@ -4,7 +4,7 @@ function f(sayHi = function() {}) {
 f(); //sayHi
 
 
-//objects name
+//function.name
 let user = {
   sayHi() {
     console.log("sayHi");
@@ -17,3 +17,8 @@ let user = {
 
 console.log(user.sayHi.name);
 console.log(user.sayBye.name);
+
+//function.length
+
+console.log(user.sayHi.length)
+console.log(user.sayBye.length)
