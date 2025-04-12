@@ -21,3 +21,19 @@ function sayHello() {
 
 var op = sayHello();
 op();
+
+//lexical scoping
+function foo() {
+  var a = 5;
+  function bar() {
+    console.log(a);
+    var b = 10;
+    function baz() {
+      console.log(b);
+    }
+    return baz();
+  }
+  return bar();
+}
+
+foo();
