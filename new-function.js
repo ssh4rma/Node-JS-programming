@@ -1,14 +1,14 @@
 let str = "hellouser"; 
-let func = new Function(str);
+let func = new Function('str', 'console.log(str)');
 
-func();
+func(str); 
 
-function getFunc() {
-  let value = "test";
+// function getFunc() {
+//   let value = "test";
 
-  let func = new Function('alert(value)');
+//   let func = new Function('alert(value)');
 
-  return func;
-}
+//   return func;
+// }
 
-getFunc()(); //error
+// getFunc()(); //error
