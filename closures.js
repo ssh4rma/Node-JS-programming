@@ -10,3 +10,14 @@ function helper() {
 
 var res = helper();
 res();
+
+//ex 2
+
+function sayHello() {
+  var say = function () {console.log(hello)};
+  var hello = "Hello Shubham!"; 
+  return say;
+}
+
+var op = sayHello();
+op();
