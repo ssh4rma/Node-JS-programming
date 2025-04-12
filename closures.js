@@ -24,10 +24,10 @@ op();
 
 //lexical scoping
 function foo() {
-  var a = 5;
+  let a = 5;
   function bar() {
     console.log(a);
-    var b = 10;
+    let b = 10;
     function baz() {
       console.log(b);
     }
