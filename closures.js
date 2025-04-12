@@ -51,3 +51,30 @@ result[1]();
 result[2]();
 result[3]();
 result[4]();
+
+//closures exmaple of keeping the scope for subsequent function calls
+
+function iCantThinkOfAName(num, obj) {
+  var array = [1, 2, 3];
+  function doSomething(i) {
+    num += i;
+    array.push(num);
+    console.log('num: ' + num);
+    console.log('array: ' + array);
+    console.log('obj.value: ' + obj.value);
+  }
+
+  return doSomething;
+}
+
+var referenceObject = { value: 10 };
+var foo = iCantThinkOfAName(2, referenceObject);
+var bar = iCantThinkOfAName(6, referenceObject);
+
+foo(2); 
+bar(2); 
+
+referenceObject.value++;
+
+foo(4);
+bar(4); 
