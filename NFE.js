@@ -40,7 +40,21 @@ let sayHello = function func(who) {
   }
 };
 
-sayHi(); // Hello, Guest
+sayHello(); // Hello, Guest
 
 
 func(); // Error
+
+//limitation of NFE
+let sayHello2 = function(who) {
+  if (who) {
+    alert(`Hello, ${who}`);
+  } else {
+    sayHello2("Guest"); 
+  }
+};
+
+let welcome = sayHello2;
+sayHello2 = null;
+
+welcome(); // Error
