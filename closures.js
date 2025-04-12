@@ -102,3 +102,21 @@ function toFixedTwoPlaces(value) {
 var myCalculator = mysteriousCalculator(10.01, 2.01);
 myCalculator.add() 
 myCalculator.subtract() 
+
+//private information sharing using closure
+function secretPassword() {
+  var password = 'xh38sk';
+  return {
+    guessPassword: function(guess) {
+      if (guess === password) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  }
+}
+
+var passwordGame = secretPassword();
+passwordGame.guessPassword('heyisthisit?'); // false
+passwordGame.guessPassword('xh38sk'); //true 
