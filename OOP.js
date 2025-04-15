@@ -33,4 +33,7 @@ class Animal {
   getName() {
     return this.#name;
   }
+  makeSound() {
+    return "Some generic animal sound";
+  }
 }
