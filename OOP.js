@@ -21,3 +21,12 @@ let duck = new Duck();
 let cat = new Cat();
 
 [duck, cat].forEach(obj => makeDucksType(obj));
+
+
+//private member
+class Animal {
+  #name; // Private field
+  constructor(name) {
+    this.#name = name;
+  }
+}
