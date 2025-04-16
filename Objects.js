@@ -46,3 +46,9 @@ function parentScope() {
   this.appName = 'my-application'; 
   this.sharedData = {message: 'Hello world this is shubham'};
 }
+
+function childScope(parent) {
+  this.__proto__ = parent;
+  this.childMessage = 'Hello from child';
+  this.localData = {message: 'This is the local message from child'}; 
+}
