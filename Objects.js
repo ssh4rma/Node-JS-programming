@@ -25,6 +25,17 @@ function userSerive() {
   }
 
   this.getUser = function() {
-    return [...user];
+    return [...users];
   }
 }
+
+const func = new userSerive(); 
+
+console.log(func.getUser()); //will return the complete user name data.
+let newuser = {
+  id: 55,
+  name: "John Doe",
+  email: "john@gmail.com"
+};
+func.addUser(newuser);
+console.log(func.getUser());
