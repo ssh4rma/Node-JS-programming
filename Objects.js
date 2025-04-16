@@ -55,3 +55,6 @@ function childScope(parent) {
 
 const f1 = new parentScope();
 const f2 = new childScope(f1);
+
+console.log(f1.sharedData);
+console.log(f2.sharedData);//accessed the shared data in child scope from parentscope
