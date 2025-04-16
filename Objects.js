@@ -52,3 +52,6 @@ function childScope(parent) {
   this.childMessage = 'Hello from child';
   this.localData = {message: 'This is the local message from child'}; 
 }
+
+const f1 = new parentScope();
+const f2 = new childScope(f1);
