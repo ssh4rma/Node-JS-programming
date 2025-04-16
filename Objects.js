@@ -39,3 +39,10 @@ let newuser = {
 };
 func.addUser(newuser);
 console.log(func.getUser());
+
+//Scope inheritance with objects
+
+function parentScope() {
+  this.appName = 'my-application'; 
+  this.sharedData = {message: 'Hello world this is shubham'};
+}
