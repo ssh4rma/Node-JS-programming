@@ -17,4 +17,10 @@ function userSerive() {
     newUser.id = users.length + 1; 
     users.push(newUser);
   }
+
+  this.removeUser = function(id) {
+    users = users.filter((usr) => {
+      return (usr.id !== id)
+    });
+  }
 }
