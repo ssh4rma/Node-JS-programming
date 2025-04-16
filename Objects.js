@@ -61,3 +61,9 @@ console.log(f2.sharedData);//accessed the shared data in child scope from parent
 
 console.log(f2.childMessage);
 console.log(f2.appName);
+
+//insert new property in the parentScope function prototype
+let newMethod = 'This is the new method in the parent function';
+parentScope.prototype.newStmt = newMethod;
+
+console.log(f2.newStmt);
