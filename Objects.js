@@ -23,4 +23,8 @@ function userSerive() {
       return (usr.id !== id)
     });
   }
+
+  this.getUser = function() {
+    return [...user];
+  }
 }
