@@ -33,3 +33,6 @@ console.log(5 + null || false);
 // 5 + null is 5 || false = 5 so 5
 
 console.log("" - 1); //-1
+
+console.log([1] + [2]); //12
+//because "1" + "2" is string concatenation
