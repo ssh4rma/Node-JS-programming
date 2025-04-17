@@ -20,3 +20,16 @@ function emptyStack(st) {
 
 emptyStack(st);
 console.log(st);
+
+
+// Create a recursive function to find the minimum element in a stack
+
+let mx = -1;
+function findMx(st) {
+  if(st.length === 0) return;
+  let temp = st.pop();
+  mx = Math.max(mx, temp);
+  findMx(st);
+}
+findMx(st);
+console.log(mx);
