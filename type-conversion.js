@@ -28,3 +28,6 @@ console.log("3" == 3); //true
 
 console.log({x : 5} == 5); //false 
 //because {x : 5} will be converted to [object Object] and the number() of which is equals to NaN and NaN == 5 is false
+
+console.log(5 + null || false);
+// 5 + null is 5 || false = 5 so 5
