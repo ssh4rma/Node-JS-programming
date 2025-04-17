@@ -9,7 +9,7 @@ console.log(undefined - 5); //NaN
 console.log("3" * "2") //6
 
 console.log([] == ![]); //true
-// [] is truthy value, toString([]) -> "" ;Number("") -> 0
+// [] is truthy value, toString([]) -> "" ; Number("") -> 0
 // !(true) = false ; 0 == false; and Number(false) = 0, 0 == 0 => true;
 
 console.log(0 && 'hello' || 5); //5
@@ -20,3 +20,8 @@ console.log(NaN > undefined); //false
 
 console.log("true" == true); //false
 //because true will be converted to it's number form which is 1 and true will be converted to it's number form which is NaN and NaN == 1 is false
+
+console.log([5] == 5); //true
+// [5] -> toString([5]) -> "5" -> Number(5) = 5;
+//5 == 5;
+console.log("3" == 3); //true
