@@ -31,3 +31,5 @@ console.log({x : 5} == 5); //false
 
 console.log(5 + null || false);
 // 5 + null is 5 || false = 5 so 5
+
+console.log("" - 1); //-1
