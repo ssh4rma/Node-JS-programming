@@ -48,3 +48,4 @@ console.log(NaN == NaN); //true
 
 
 console.log("0" == false); //true
+console.log([0] == false); //true
