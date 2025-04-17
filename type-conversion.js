@@ -42,3 +42,6 @@ console.log([1, 2] == "1,2"); //true
 console.log({} == "[object Object]"); //true
 
 console.log(null == undefined); //true  
+
+/// *** IMPORTANT *** 
+console.log(NaN == NaN); //true
