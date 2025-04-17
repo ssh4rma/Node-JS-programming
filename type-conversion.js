@@ -49,3 +49,6 @@ console.log(NaN == NaN); //true
 
 console.log("0" == false); //true
 console.log([0] == false); //true
+
+console.log({ value: 10 } == 10); //false
+//because Number(object Object) is NaN and NaN == 10 is false
