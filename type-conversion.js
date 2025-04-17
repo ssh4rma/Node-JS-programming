@@ -17,3 +17,6 @@ console.log(0 && 'hello' || 5); //5
 //|| will return the first truthy value, or last of all falsy value
 
 console.log(NaN > undefined); //false
+
+console.log("true" == true); //false
+//because true will be converted to it's number form which is 1 and true will be converted to it's number form which is NaN and NaN == 1 is false
