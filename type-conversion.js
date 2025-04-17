@@ -40,3 +40,5 @@ console.log([1] + [2]); //12
 console.log([1, 2] == "1,2"); //true
 
 console.log({} == "[object Object]"); //true
+
+console.log(null == undefined); //true  
