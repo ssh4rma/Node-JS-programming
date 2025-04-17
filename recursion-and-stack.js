@@ -33,3 +33,15 @@ function findMx(st) {
 }
 findMx(st);
 console.log(mx);
+
+//Implement a recursive function to calculate the sum of all elements in a stack.
+
+function findSum(st, sum) {
+  if (st.length === 0) return sum;
+  let temp = st.pop();
+  sum += temp;
+  return findSum(st, sum);
+}
+
+let sum = 0;
+console.log(findSum(st, sum)); 
