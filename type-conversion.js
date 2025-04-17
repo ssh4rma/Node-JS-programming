@@ -25,3 +25,6 @@ console.log([5] == 5); //true
 // [5] -> toString([5]) -> "5" -> Number(5) = 5;
 //5 == 5;
 console.log("3" == 3); //true
+
+console.log({x : 5} == 5); //false 
+//because {x : 5} will be converted to [object Object] and the number() of which is equals to NaN and NaN == 5 is false
