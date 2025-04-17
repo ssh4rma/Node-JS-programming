@@ -36,3 +36,5 @@ console.log("" - 1); //-1
 
 console.log([1] + [2]); //12
 //because "1" + "2" is string concatenation
+
+console.log([1, 2] == "1,2"); //true
