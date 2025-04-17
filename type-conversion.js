@@ -45,3 +45,6 @@ console.log(null == undefined); //true
 
 /// *** IMPORTANT *** 
 console.log(NaN == NaN); //true
+
+
+console.log("0" == false); //true
