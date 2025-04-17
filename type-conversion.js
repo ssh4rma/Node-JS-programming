@@ -52,3 +52,7 @@ console.log([0] == false); //true
 
 console.log({ value: 10 } == 10); //false
 //because Number(object Object) is NaN and NaN == 10 is false
+
+console.log("123abc" == 123); 
+// console.log(Number("123abc")); //NaN
+//NaN == 123 is false
