@@ -15,3 +15,5 @@ console.log([] == ![]); //true
 console.log(0 && 'hello' || 5); //5
 //&& will return the first falsy value or last of all truthy value
 //|| will return the first truthy value, or last of all falsy value
+
+console.log(NaN > undefined); //false
