@@ -25,3 +25,8 @@ class BankAccount {
     console.log(`Current balance: ₹${this.#balance}`);
   }
 }
+
+const myAccount = new BankAccount(1000);
+myAccount.deposit(500);
+myAccount.withdraw(200);
+myAccount.checkBalance();
