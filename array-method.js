@@ -19,3 +19,7 @@ console.log(pets.slice(1, 3));
 console.log(pets.map((val) => {
   return val.length * 2;
 }));
+
+//splice(): return the array after deleting the elements
+let str = 'shubham';
+console.log(pets.splice(1)); 
