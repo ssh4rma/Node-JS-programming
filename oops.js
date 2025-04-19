@@ -20,4 +20,8 @@ class BankAccount {
       console.log("Insufficient funds or invalid amount.");
     }
   }
+
+  checkBalance() {
+    console.log(`Current balance: ₹${this.#balance}`);
+  }
 }
