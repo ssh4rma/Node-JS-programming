@@ -10,3 +10,6 @@ console.log(pets.includes('at')); //false
 
 //join(): array -> string
 console.log(pets.join(', '));
+
+//slice(): retuns a new array (range is "[ )" )
+console.log(pets.slice(1, 3));
