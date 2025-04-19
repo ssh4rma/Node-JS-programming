@@ -27,3 +27,9 @@ console.log(pets.splice(1));
 //copyWithin(): copy the part of the array in the another location in the array.
 
 console.log(pets.copyWithin(0, 1, 2));
+
+//every(): 
+
+console.log(pets.every((val) => {
+  return val === 'cat';
+}));
