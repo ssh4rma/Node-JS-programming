@@ -7,3 +7,6 @@ const pets = ["cat", "dog", "bat"];
 
 console.log(pets.includes("cat")); //true
 console.log(pets.includes('at')); //false
+
+//join(): array -> string
+console.log(pets.join(', '));
