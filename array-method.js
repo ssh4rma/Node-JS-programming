@@ -23,3 +23,7 @@ console.log(pets.map((val) => {
 //splice(): return the array after deleting the elements
 let str = 'shubham';
 console.log(pets.splice(1)); 
+
+//copyWithin(): copy the part of the array in the another location in the array.
+
+console.log(pets.copyWithin(0, 1, 2));
