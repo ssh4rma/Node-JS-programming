@@ -20,3 +20,19 @@ function helper() {
 
 let res2 = helper();
 console.log(res2());
+
+//example3
+
+function helper2() {
+  let cnt = 0;
+  function innerHelper() {
+    cnt += 1;
+    cnt += 2;
+    return cnt;
+  }
+  return innerHelper; 
+}
+
+let res3 = helper2(); 
+console.log(res3()); //3
+console.log(res3()); //6
