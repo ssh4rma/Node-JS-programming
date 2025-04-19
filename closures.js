@@ -8,3 +8,15 @@ function outer() {
 
 let res = outer();
 console.log(res('xyz1224'));
+
+//example2
+function helper() {
+  let a = 4;
+  function innerHelper() {
+    return a * a;
+  }
+  return innerHelper; 
+}
+
+let res2 = helper();
+console.log(res2());
